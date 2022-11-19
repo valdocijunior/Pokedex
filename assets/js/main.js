@@ -6,7 +6,7 @@ const limit = 10
 let offset = 0;
 
 function convertPokemonToLi(pokemon) {
-    return `
+    return `<a href="./details.html">
         <li class="pokemon ${pokemon.type}">
             <span class="number">#${pokemon.number}</span>
             <span class="name">${pokemon.name}</span>
@@ -20,6 +20,7 @@ function convertPokemonToLi(pokemon) {
                      alt="${pokemon.name}">
             </div>
         </li>
+        </a>
     `
 }
 
